@@ -10,19 +10,12 @@
             
             <div class="uk-width-1-2@s uk-width-2-5@m">
                 <ul class="uk-nav uk-nav-default">
-                    <li class="uk-active"><a href="#">Active</a></li>
-                    <li class="uk-parent">
-                        <a href="#">Parent</a>
-                        <ul class="uk-nav-sub">
-                            <li><a href="#">Sub item</a></li>
-                            <li>
-                                <a href="#">Sub item</a>
-                                <ul>
-                                    <li><router-link to='/'>main</router-link></li>
-                                    <li><router-link to='/about'>about</router-link></li>
-                                </ul>
-                            </li>
-                        </ul>
+                    <li class="uk-active"><router-link to='/'>main</router-link></li>
+                    <li>
+                        <router-link to='/about'>about</router-link>
+                    </li>
+                    <li>
+                        <router-link to='/bbs'>bbs</router-link>
                     </li>
                 </ul>
             </div>

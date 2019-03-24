@@ -3,7 +3,8 @@
     <header-component></header-component>
     <offcanvas-component></offcanvas-component>
     <router-link to="/">main</router-link> / 
-    <router-link to="/about">about</router-link>
+    <router-link to="/about">about</router-link> / 
+    <router-link to="/bbs">bbs</router-link>
     <router-view></router-view>
   </div>
 </template>
