@@ -1,7 +1,9 @@
 <template>
     <header>
-        header 
-        <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-overlay">Open</button>
+        <div class="container">
+            header 
+            <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-overlay">Open</button>
+        </div>
     </header>
 </template>
 
@@ -14,6 +16,7 @@ export default {
 <style scoped>
 header {
     width:100%; height:60px; line-height: 60px;
-    text-align: center; border-bottom:1px solid #e8e8e8;
+    border-bottom:1px solid #e8e8e8;
+    text-align: left;
 }
 </style>
