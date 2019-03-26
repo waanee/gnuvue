@@ -1,9 +1,8 @@
 <template>
     <div>
-        bbs test
-            <div v-for="item in getlist" v-bind:key="item.index">
-                {{ item.wr_subject }} 
-            </div>
+        <div v-for="item in getlist" v-bind:key="item.index">
+            <router-link :to="{name:'bbsView', params:{id: item.wr_id}}"> {{ item.wr_subject }} </router-link>
+        </div>
     </div> 
 </template>
 
@@ -17,7 +16,7 @@ export default {
     },
     methods:{
         getData(){
-            this.$http.get('http://temamoa.com/api/?bo_table=free&format=json')
+            this.$http.get('http://temamoa.com/api/list.php?bo_table=free')
             .then((response) => {
             var resData = response.data;
             this.getlist = resData;            

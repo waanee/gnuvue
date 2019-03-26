@@ -1,6 +1,6 @@
 <template>
-    <div style="height:1200px">
-        about page
+    <div>
+        community page
     </div>
 </template>
 

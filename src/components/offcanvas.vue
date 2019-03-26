@@ -1,24 +1,16 @@
 <template>
-    <div id="offcanvas-overlay" uk-offcanvas="overlay: true">
-        <div class="uk-offcanvas-bar">
+    <div id="offcanvas-overlay" uk-offcanvas="overlay: true;">
+        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
 
-            <button class="uk-offcanvas-close" type="button" uk-close></button>
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+            <li><router-link to="/">main</router-link></li>
+            <li><router-link to="/about">about</router-link></li>
+            <li><router-link to="/bbs">bbs</router-link></li>
 
-
-            <h3>Title</h3>
-
-            
-            <div class="uk-width-1-2@s uk-width-2-5@m">
-                <ul class="uk-nav uk-nav-default">
-                    <li class="uk-active"><router-link to='/'>main</router-link></li>
-                    <li>
-                        <router-link to='/about'>about</router-link>
-                    </li>
-                    <li>
-                        <router-link to='/bbs'>bbs</router-link>
-                    </li>
-                </ul>
-            </div>
+            <li class="uk-nav-header">Header</li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
+        </ul>
 
         </div>
     </div>
@@ -30,6 +22,12 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+.uk-offcanvas-bar{
+    background: rgb(4, 169, 97);
+    padding:0px;    
+}
+.uk-nav li{
+    width:100%;  margin:0px;
+}
 </style>

@@ -2,16 +2,15 @@
   <div id="app">
     <header-component></header-component>
     <offcanvas-component></offcanvas-component>
-    <router-link to="/">main</router-link> / 
-    <router-link to="/about">about</router-link> / 
-    <router-link to="/bbs">bbs</router-link>
     <router-view></router-view>
+    <footer-component></footer-component>
   </div>
 </template>
 
 <script>
 import HeaderComponent from './components/headComponent.vue'
 import OffcanvasComponent from './components/offcanvas.vue'
+import FooterComponent from './components/footerComponent.vue'
 
 export default {
   name: 'app',
@@ -21,7 +20,7 @@ export default {
     }
   },
   components:{
-    HeaderComponent, OffcanvasComponent
+    HeaderComponent, OffcanvasComponent, FooterComponent
   }
 }
 </script>
